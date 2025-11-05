@@ -37,6 +37,8 @@ public class ArbitroRestController {
         return asignaciones.stream().map(PartidoArbitroDTO::from).collect(Collectors.toList());
     }
 
+    
+
     @PostMapping(consumes = "application/json")
     public ResponseEntity<ArbitroDTO> create(@RequestBody ArbitroCreateRequest req) {
         if (req == null || req.username == null || req.email == null || req.password == null) {
