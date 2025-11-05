@@ -27,10 +27,25 @@ public class Datainitializer implements CommandLineRunner {
 
         // ARBITRO: username, email, nombre, apellido, rawPassword, especialidad, escalafon, disponibilidad
         arbitroService.createArbitroIfNotExists("Camiloref", "Camiloref@caba.com", "Camilo", "Perez",
-                "refpassword", "Municipal", true,"/ImagenesPerfil/Arbitro1.jpg");
+                "refpassword", "Municipal", true,"https://fotos-arbitros.s3.us-east-1.amazonaws.com/arbitro-1.jpeg");
         arbitroService.createArbitroIfNotExists("arbitro2", "LuisaRef@caba.com", "Luisa", "Fernandez",
-                "abc123", "Internacional", true,"/ImagenesPerfil/Arbitro2.jpg");
+                "abc123", "Internacional", true,"https://fotos-arbitros.s3.us-east-1.amazonaws.com/arbitro-10.jpeg");
         arbitroService.createArbitroIfNotExists("arbitro3", "CarlosRef@caba.com", "Carlos", "Gomez",
-                "def456", "Nacional", true,"/ImagenesPerfil/Arbitro3.jpg");
+                "def456", "Nacional", true,"https://fotos-arbitros.s3.us-east-1.amazonaws.com/arbitro-5.jpeg");
+        arbitroService.createArbitroIfNotExists("arbitro4", "MariaRef@caba.com", "María", "López",
+        "ghi789", "Municipal", true, "https://fotos-arbitros.s3.us-east-1.amazonaws.com/arbitro-4.jpeg");
+        arbitroService.createArbitroIfNotExists("arbitro5", "JorgeRef@caba.com", "Jorge", "Ramírez",
+                "jkl012", "Internacional", true, "https://fotos-arbitros.s3.us-east-1.amazonaws.com/arbitro-3.jpeg");
+        arbitroService.createArbitroIfNotExists("arbitro6", "AndreaRef@caba.com", "Andrea", "Hernández",
+                "mno345", "Nacional", true, "https://fotos-arbitros.s3.us-east-1.amazonaws.com/arbitro-2.jpeg");
+        arbitroService.createArbitroIfNotExists("arbitro7", "PedroRef@caba.com", "Pedro", "Martínez",
+                "pqr678", "Municipal", true, "https://fotos-arbitros.s3.us-east-1.amazonaws.com/arbitro-6.jpeg");
+        arbitroService.createArbitroIfNotExists("arbitro8", "SofiaRef@caba.com", "Sofía", "Rodríguez",
+                "stu901", "Internacional", true, "https://fotos-arbitros.s3.us-east-1.amazonaws.com/arbitro-7.jpeg");
+        arbitroService.createArbitroIfNotExists("arbitro9", "DanielRef@caba.com", "Daniel", "Torres",
+                "vwx234", "Nacional", true, "https://fotos-arbitros.s3.us-east-1.amazonaws.com/arbitro-8.jpeg");
+        arbitroService.createArbitroIfNotExists("arbitro10", "LauraRef@caba.com", "Laura", "Castro",
+                "yz0123", "Municipal", true, "https://fotos-arbitros.s3.us-east-1.amazonaws.com/arbitro-9.jpeg");
+
     }
 }
